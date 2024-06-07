@@ -1,0 +1,48 @@
+header {
+    background-color: blueviolet;
+}
+.logo {
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+.container-fluid {
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 40px;
+    grid-template-columns: 30% auto;
+}
+
+nav {
+    justify-self: right;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    float: left;
+}
+
+ul li:last-child {
+    margin-left: 12px;
+}
+
+ul li a {
+    color: white;
+    padding: 10px;
+    text-transform: uppercase;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.active {
+    background-color: darkviolet;
+    border-radius: 8px;
+}

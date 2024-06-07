@@ -1,0 +1,35 @@
+  <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-4 pb-2 mb-3 border-bottom">
+    <h3 class="h3">Dashboard</h3>
+    <div class="btn-toolbar mb-2 mb-md-0">
+      <div class="btn-group me-2">
+        <button type="button" class="btn btn-sm btn-outline-secondary">Share</button>
+        <button type="button" class="btn btn-sm btn-outline-secondary">Export</button>
+      </div>
+      <button type="button" class="btn btn-sm btn-outline-secondary dropdown-toggle d-flex align-items-center gap-1">
+        <svg class="bi"><use xlink:href="#calendar3"></use></svg>
+        This week
+      </button>
+    </div>
+  </div>
+
+  <div>
+    <canvasjs-chart [options]="areaChartOption"></canvasjs-chart>
+  </div>
+
+  <div class="row">
+    <div class="col-md-6">
+      <canvasjs-chart [options]="barChartOption"></canvasjs-chart>
+    </div>
+    <div class="col-md-6">
+      <canvasjs-chart [options]="lineChartOption"></canvasjs-chart>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-6">
+      <canvasjs-chart [options]="doughnutChartOption"></canvasjs-chart>
+    </div>
+    <div class="col-md-6">
+      <canvasjs-chart [options]="pieChartOption"></canvasjs-chart>
+    </div>
+  </div>
